@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 public class outputformat {
     public static void main(String[] args) {
         @SuppressWarnings("resource")
