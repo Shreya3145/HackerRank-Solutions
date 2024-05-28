@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 public class controlFlow {
     private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
