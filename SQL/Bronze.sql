@@ -1,4 +1,4 @@
-/* Contains solution to all the queries from bronze level*/
+/* Contains solution to all the queries from bronze level - 1 star*/
 -- Revising the Select Query I
 select * from city where population > 100000 having CountryCode='USA';
 -- Revising the Select Query II
