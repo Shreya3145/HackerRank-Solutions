@@ -1,4 +1,4 @@
-/* Contains solution to all the queries from bronze level - 2 stars*/
+/* Contains solution to all the queries from bronze level - 2 stars - MySQL*/
 -- Weather Observation Station 4
 select count(city)-count(distinct city) from station;
 -- Weather Observation Station 5
