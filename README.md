@@ -7,7 +7,8 @@ I'm actively solving problems to improve my coding skills. 🚀
 - **Java**  
 - **SQL**  
 - **C**  
-- **Bash**  
+- **Bash**
+- **10 days of JavaScript**
 
 ## 🛠 How to Run  
 
