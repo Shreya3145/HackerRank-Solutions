@@ -1,11 +1,10 @@
-import java.io.*;
 import java.util.*;
 
 public class stringintro {
 
     public static void main(String[] args) {
         
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String A=sc.next();
         String B=sc.next();
         System.out.println(A.length()+B.length()); //finding the lengths and adding them
