@@ -1,13 +1,14 @@
-import java.lang.*;
 import java.text.*;
 import java.util.*;
 
 public class currconvert {
     
+    @SuppressWarnings("deprecation")
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double payment = scanner.nextDouble();
-        scanner.close();
+        double payment;
+        try (Scanner scanner = new Scanner(System.in)) {
+            payment = scanner.nextDouble();
+        }
         NumberFormat currus = NumberFormat.getCurrencyInstance();
         NumberFormat currcn = NumberFormat.getCurrencyInstance(Locale.CHINA);
         NumberFormat currfr = NumberFormat.getCurrencyInstance(Locale.FRANCE);//java.text package
