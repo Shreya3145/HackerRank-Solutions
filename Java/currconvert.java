@@ -3,7 +3,6 @@ import java.util.*;
 
 public class currconvert {
     
-    @SuppressWarnings("deprecation")
     public static void main(String[] args) {
         double payment;
         try (Scanner scanner = new Scanner(System.in)) {
