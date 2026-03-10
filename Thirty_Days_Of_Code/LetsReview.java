@@ -1,19 +1,18 @@
-import java.io.*;
+package Thirty_Days_Of_Code;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+
 
 public class LetsReview {
 
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        int n = sc.nextInt();
-        sc.nextLine();
-        for(int i = 0; i < n; i++){
-            String s = sc.nextLine();
-            separateEvenAndOdd(s);
-            System.out.println();
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();
+            sc.nextLine();
+            for(int i = 0; i < n; i++){
+                String s = sc.nextLine();
+                separateEvenAndOdd(s);
+                System.out.println();
+            }
         }
     
     }
