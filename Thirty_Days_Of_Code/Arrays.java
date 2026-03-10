@@ -9,15 +9,14 @@ import java.util.stream.Stream;
 
 public class Arrays {
      public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
-        int n = Integer.parseInt(bufferedReader.readLine().trim());
-
-        List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
-
-        bufferedReader.close();
+         int n;
+         List<Integer> arr;
+         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in))) {
+             n = Integer.parseInt(bufferedReader.readLine().trim());
+             arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                     .map(Integer::parseInt)
+                     .collect(toList());
+         }
         
         for(int i = n-1; i >= 0; i--){
             System.out.print(arr.get(i) +" ");
