@@ -16,7 +16,7 @@ public class DictionariesAndMaps {
             }
             while(in.hasNext()){
                 String s = in.next();
-                if(phonebook.getOrDefault(s, 0) == 0){
+                if(phonebook.containsKey(s)){ // if(phonebook.getOrDefault(s, 0) == 0) not safe
                     System.out.println("Not found");
                 }
                 else {
