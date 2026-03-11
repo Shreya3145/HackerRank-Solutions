@@ -2,7 +2,6 @@
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
-//Complete the following function.
 
 int max(int a, int b){
  int c = a > b ? a : b;

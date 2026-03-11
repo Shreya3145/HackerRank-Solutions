@@ -13,9 +13,6 @@ int main() {
     for(int i = 0; i <= s-1; i++){
        sum = sum+arr[i];
     }
-    printf("%d", sum);
-    
-
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    printf("%d", sum);  
     return 0;
 }
