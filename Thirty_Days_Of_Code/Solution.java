@@ -1,13 +1,10 @@
 package Thirty_Days_Of_Code;
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+
 
 
 class Difference {
-  	private int[] elements;
+  	private final int[] elements;
   	public int maximumDifference;
     
     Difference(int[] elements){
@@ -34,18 +31,19 @@ class Difference {
 public class Solution {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] a = new int[n];
-        for (int i = 0; i < n; i++) {
-            a[i] = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();
+            int[] a = new int[n];
+            for (int i = 0; i < n; i++) {
+                a[i] = sc.nextInt();
+            }
+            sc.close();
+
+            Difference difference = new Difference(a);
+
+            difference.computeDifference();
+
+            System.out.print(difference.maximumDifference);
         }
-        sc.close();
-
-        Difference difference = new Difference(a);
-
-        difference.computeDifference();
-
-        System.out.print(difference.maximumDifference);
     }
 }
